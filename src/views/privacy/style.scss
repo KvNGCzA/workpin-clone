@@ -1,0 +1,47 @@
+@import '../../colors';
+
+.privacy-page {
+  margin-top: 8em;
+  min-height: 90vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 4em;
+  flex-direction: column;
+
+  h1 {
+    font-size: 100px;
+    color: $button_black;
+    margin-bottom: 0.8em;
+    width: 100%;
+  }
+
+  section {
+    text-align: left;
+    font-size: 13px;
+    color: #000;
+    line-height: 21px;
+    width: 100%;
+    max-width: 957px;
+    margin: auto;
+    margin-bottom: 1em;
+
+    .content {
+      margin-bottom: 1em;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .privacy-page {
+    padding: 0 1em;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
