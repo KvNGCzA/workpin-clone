@@ -1,0 +1,32 @@
+@import '../../../colors';
+
+.harmony-cont {
+  position: relative;
+  background-color: rgba(0, 138, 252, 0.84);
+  padding: 7em 0;
+
+  h6 {
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'open sans',sans-serif;
+  }
+
+  img {
+    width: 600px;
+    height: auto;
+  }
+
+  p {
+    color: $white;
+    font-size: 30px;
+    font-family: "CustomFont";
+    font-weight: bold;
+    padding: 0 7.5em;
+    text-align: left;
+
+    span {
+      font-size: 36px;
+    }
+  }
+}
