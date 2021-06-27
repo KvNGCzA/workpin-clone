@@ -1,4 +1,4 @@
-@import'../../colors';
+@import '../../colors';
 
 footer {
   position: relative;
@@ -12,10 +12,13 @@ footer {
     li {
       display: inline-block;
       margin: 0 1.5em;
-      text-decoration: underline;
 
-      &:hover {
-        cursor: pointer;
+      a {
+        color: $text_black_1;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

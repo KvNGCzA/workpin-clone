@@ -23,13 +23,17 @@ header {
     }
 
     button {
-      color: $white;
       background-color: $button_black;
       font-size: 15px;
       border: 0;
       text-transform: capitalize;
       padding: 0.8em 3.5em;
       border-radius: 10em;
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
 
       &:hover {
         background-color: $blue;

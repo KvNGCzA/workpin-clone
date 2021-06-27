@@ -1,0 +1,206 @@
+@import '../../colors';
+
+.auth {
+  margin-top: 4.6em;
+
+  h1 {
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1.5em;
+
+    p,
+    .entry {
+      width: 80%;
+    }
+
+    p {
+      font-family: 'CustomFont';
+      text-transform: capitalize;
+      font-weight: 200;
+      margin-bottom: 0.5em;
+      font-size: 14px;
+    }
+
+    .entry,
+    textarea,
+    select {
+      border: 1px solid rgb(227, 227, 227);
+      padding: 1em;
+      outline: none !important;
+      font-family: 'CustomFont';
+
+      &::placeholder {
+        text-transform: capitalize;
+        color: $text_black_1;
+      }
+
+      &:hover,
+      &:focus {
+        border: 1px solid rgb(220, 220, 220);
+        cursor: pointer;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      border-color: transparent;
+    }
+  }
+
+  button {
+    background-color: $button_black;
+    color: $white;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 1em 5em;
+    border: 0;
+    border-radius: 10em;
+    margin-top: 4em;
+    transition: all 1s;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  .login,
+  .join {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .login-content,
+    .join-content {
+      width: 660px;
+
+      .login-form,
+      .join-form {
+        background-color: $card_back;
+        box-shadow: 0px 1px 22px 0px rgba(0, 0, 0, 0.18);
+        padding: 4em;
+        border-radius: 1.5em;
+      }
+    }
+  }
+
+  .join {
+    background-color: $text_black_1;
+    color: $white;
+    height: 35em;
+    padding: 3em 0;
+    margin-bottom: 7em;
+
+    .join-content {
+      position: relative;
+      height: 100%;
+
+      .join-form {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 8em;
+        z-index: 33;
+
+        .input-group {
+          width: 50%;
+
+          &:nth-child(2n) {
+            align-items: flex-end;
+          }
+
+          &:first-child,
+          &:nth-child(3n) {
+            align-items: flex-start;
+          }
+
+          .entry {
+            width: 95%;
+            border-color: transparent;
+          }
+
+          .entry,
+          textarea {
+            &:hover {
+              background-color: $card_back_hover;
+            }
+          }
+
+          &.text-area {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .auth {
+    margin-top: -3em;
+
+    h1 {
+      font-size: 35px;
+    }
+
+    .input-group {
+      p,
+      .entry {
+        width: 100%;
+      }
+    }
+
+    .login,
+    .join {
+      .login-content,
+      .join-content {
+        width: 90%;
+      }
+    }
+
+    .join {
+      height: 41em;
+
+      .join-content {
+        .join-form {
+          display: block;
+          top: 5em;
+          width: 100%;
+          flex-direction: column;
+
+          .input-group {
+            width: 100%;
+
+            &:nth-child(2n) {
+              align-items: center;
+            }
+
+            &:first-child,
+            &:nth-child(3n) {
+              align-items: center;
+            }
+
+            .entry {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
