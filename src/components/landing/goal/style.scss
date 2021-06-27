@@ -1,0 +1,82 @@
+@import'../../../colors';
+
+.goals-cont {
+  position: relative;
+  background-color: $white;
+
+  .goals {
+    display: flex;
+    width: 100%;
+    padding: 5em 0;
+  
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+  
+      .image {
+        background-color: $card_back;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        justify-content: flex-end;
+      }
+  
+      .text {
+        padding: 0 17em 0 5em;
+  
+        h3 {
+          padding: 0 2em 0 0;
+        }
+      }
+    }
+  
+    & > div {
+      width: 50%;
+    }
+  
+    .image {
+      width: 48%;
+      background-color: $card_back;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      height: 442px;
+      display: flex;
+      align-items: center;
+      padding: 0 3em;
+      transition: all 1s;
+  
+      img {
+        width: 329px;
+        height: auto;
+      }
+  
+      &:hover {
+        background-color: $card_back_hover;
+      }
+    }
+  
+    .text {
+      width: 52%;
+      text-align: left;
+      padding: 0 5em 0 16em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      h3 {
+        font-size: 26px;
+        font-family: 'Poppins';
+        margin-bottom: 1em;
+        padding: 0 2em 0 0;
+      }
+  
+      p {
+        font-family: 'CustomFont';
+        font-size: 16px;
+        line-height: 1.4em;
+        white-space: pre-line;
+        // width: 24em;
+      }
+    }
+  }
+}

@@ -2,18 +2,21 @@
   <div class="main">
     <VidSection />
     <BestOfRemote />
+    <Goal />
   </div>
 </template>
 
 <script>
 import VidSection from './vidSection/VidSection.vue';
 import BestOfRemote from './bestOfRemote/BestOfRemote.vue';
+import Goal from './goal/Goal.vue';
 
 export default {
-  name: 'App',
+  name: 'Landing',
   components: {
     VidSection,
-    BestOfRemote
+    BestOfRemote,
+    Goal
   }
 }
 </script>

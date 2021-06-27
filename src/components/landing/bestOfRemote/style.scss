@@ -1,7 +1,9 @@
-@import'../../../colors';
+@import '../../../colors';
 
 .best-of-remote {
-  margin: 7em 0;
+  padding: 7em 0;
+  position: relative;
+  background-color: $white;
 
   & > div {
     max-width: 53em;
@@ -11,26 +13,30 @@
       width: 587px;
       height: auto;
     }
-  
+
     .text-cont {
       text-align: left;
 
       p {
-        font-family: Arial, Helvetica, sans-serif;
         color: $text_black_1;
-  
+
         &:first-child {
           color: $blue;
           font-size: 16px;
-          font-weight: 600;
+          font-weight: bold;
           margin-top: 2em;
         }
-  
+
+        &:last-child,
+        &:first-child {
+          font-family: 'CustomFont';
+        }
+
         &:last-child {
           font-size: 16px;
-          padding-right: 9em;
+          padding-right: 4em;
         }
-  
+
         &:nth-child(2) {
           font-size: 67px;
           font-weight: bold;

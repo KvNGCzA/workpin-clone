@@ -4,20 +4,25 @@
 </template>
 
 <script>
-import Header from './components/header/Header.vue'
-import Landing from './components/landing/Landing.vue'
+import Header from "./components/header/Header.vue";
+import Landing from "./components/landing/Landing.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
-    Landing
-  }
-}
+    Landing,
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "CustomFont";
+  src: local("CustomFont"), url(./assets/fonts/file.woff2) format("woff2");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
