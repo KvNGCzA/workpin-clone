@@ -1,0 +1,35 @@
+@import'../../colors';
+
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shd,0 0 5px rgba(0,0,0,.7));
+  top: 0;
+  left: 0;
+  padding: 1em 15em;
+  z-index: 500;
+  background-color: $white;
+
+  img {
+    width: 102px;
+    height: auto;
+  }
+
+  button {
+    color: $white;
+    background-color: $button_black;
+    font-size: 15px;
+    border: 0;
+    text-transform: capitalize;
+    padding: 0.8em 3.5em;
+    border-radius: 10em;
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+  }
+}

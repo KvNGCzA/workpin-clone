@@ -1,0 +1,25 @@
+@import'../../../colors';
+
+.vid-section {
+  height: 35em;
+  background-color: $button_black;
+  width: 100%;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  h1, span {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 100px;
+  }
+
+  h1 {
+    span {
+      border: 1px solid $white;
+      border-radius: 19px;
+      padding: 0 0.2em;
+    }
+  }
+}
