@@ -22,6 +22,10 @@ const routes = [
     path: '/legal',
     component: Terms,
   },
+  {
+    path: '/:pathMatch(.*)*',
+    component: Landing,
+  },
 ];
 
 const router = createRouter({
