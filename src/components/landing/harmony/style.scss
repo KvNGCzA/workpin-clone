@@ -9,7 +9,7 @@
     color: $white;
     font-size: 16px;
     font-weight: 400;
-    font-family: 'open sans',sans-serif;
+    font-family: 'open sans', sans-serif;
   }
 
   img {
@@ -20,13 +20,41 @@
   p {
     color: $white;
     font-size: 30px;
-    font-family: "CustomFont";
+    font-family: 'CustomFont';
     font-weight: bold;
     padding: 0 7.5em;
     text-align: left;
 
     span {
       font-size: 36px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .harmony-cont {
+    padding: 4em 4em;
+
+    p {
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .harmony-cont {
+    padding: 4em 1em;
+
+    img {
+      max-width: 80%;
+    }
+
+    p {
+      font-size: 20px;
+
+      span {
+        font-size: 26px;
+      }
     }
   }
 }

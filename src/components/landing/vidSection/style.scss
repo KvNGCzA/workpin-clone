@@ -1,4 +1,4 @@
-@import'../../../colors';
+@import '../../../colors';
 
 .vid-section {
   height: 35em;
@@ -17,8 +17,9 @@
     width: 100vw;
     height: 100vh;
   }
-  
-  h1, span {
+
+  h1,
+  span {
     position: relative;
     font-family: 'Poppins';
     font-weight: 600;
@@ -30,6 +31,17 @@
       border: 1px solid $white;
       border-radius: 19px;
       padding: 0 0.2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .vid-section {
+    height: 24em;
+
+    h1,
+    span {
+      font-size: 50px;
     }
   }
 }

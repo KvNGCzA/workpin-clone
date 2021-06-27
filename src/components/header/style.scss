@@ -11,7 +11,6 @@ header {
   background-color: $white;
 
   .header-content {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +35,23 @@ header {
         background-color: $blue;
         cursor: pointer;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    .header-content {
+      max-width: none;
+      padding: 0 4em;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header {
+    .header-content {
+      padding: 0 1em;
     }
   }
 }

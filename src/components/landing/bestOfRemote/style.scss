@@ -46,3 +46,46 @@
     }
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .best-of-remote {
+    .best-of-remote-content {
+      max-width: none;
+      width: 100%;
+      padding: 0 4em;
+
+      .text-cont {
+        text-align: left;
+
+        p {
+          &:last-child {
+            font-size: 16px;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .best-of-remote {
+    padding: 3em 0;
+
+    .best-of-remote-content {
+      padding: 0 1em;
+
+      img {
+        max-width: 90%;
+      }
+
+      .text-cont {
+        p {
+          &:nth-child(2) {
+            font-size: 37px;
+          }
+        }
+      }
+    }
+  }
+}
