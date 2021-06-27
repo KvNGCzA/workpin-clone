@@ -1,6 +1,6 @@
 <template>
   <div class="best-of-remote">
-    <div>
+    <div class="best-of-remote-content">
       <img
         src="https://static.wixstatic.com/media/0d6dd0_eb037509d6e5436dbd0e7dafbe3a8ee6~mv2.png/v1/fill/w_1174,h_480,al_c,q_90,usm_0.66_1.00_0.01/workpin%20platform.webp"
         alt="workpin platform.png"
